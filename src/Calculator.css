@@ -1,0 +1,48 @@
+*, ::before, ::after {box-sizing: border-box;}
+
+/* Fonts */
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/Inter-ExtraLight.woff2") format("woff2");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/Inter-Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+
+/* Default button */
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  margin: 5px;
+}
+
+/* Main */
+body {background-color: #000;}
+.calculator__application {text-align: center;}
+.calculator__container {display: flex; flex-flow: row wrap; justify-content: center; align-items: center; width: 400px;
+  margin: 0 auto; min-height: 100vh;}
+.calculator__wrapper {display: flex; flex-flow: column wrap; justify-content: center; width:100%; height: 100%; border-radius: 35px; font-family: 'Inter'; background-color: black;}
+.calculator__buttons__special, .calculator__buttons__operator, .calculator__buttons__number {
+    width: 50px; height: 50px; border-radius: 60px; color: white;
+}
+.calculator__buttons__zero {width: 110px; border-radius: 60px; height: 50px; color: white;}
+.calculator__buttons__special {background-color: #58585b;}
+.calculator__buttons__operator {background-color: #f7990a;}
+.calculator__buttons__number, .calculator__buttons__zero {background-color: #29292b;}
+.calculator__buttons button {font-size: 19px;}
+.calculator__items {width: 100%;}
+.calculator__items:first-child {display: flex; justify-content: end;}
+.calculator__input {color: white; font-size: 32px; margin-right: 50px; align-self: end;}
+
+
+/* Responsive */
+@media only screen and (max-width: 767px) {
+    .calculator__container {width: unset;}
+}

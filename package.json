@@ -1,7 +1,11 @@
 {
-  "name": "calculator",
-  "version": "0.1.0",
+  "name": "ios-calculator-mockup",
+  "version": "1.0.0",
   "private": true,
+  "description": "React-based iOS-style Calculator Clone with interactive UI, decimal and percentage support.",
+  "author": "Armin Ayaz",
+  "license": "MIT",
+  "homepage": "https://ios-calc-mockup.netlify.app/",
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.6.4",
